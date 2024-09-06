@@ -79,7 +79,6 @@ public class InterstitialAdsActivity extends AppCompatActivity {
                 mInterstitialAd.show();
             }
         });
-        setupInterstitial();
     }
 
     @Override
@@ -162,6 +161,5 @@ public class InterstitialAdsActivity extends AppCompatActivity {
                         Log.d(TAG, "onAdImpression");
                     }
                 });
-        mInterstitialAd.show();
     }
 }

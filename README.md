@@ -1,9 +1,9 @@
 InMobi SDK for Android
 ======================
 
-Modified: 16 February, 2023
+Modified: 30 August, 2024
 
-SDK Version: 10.5.4
+SDK Version: 10.7.7
 
 Thanks for monetizing with InMobi!
 If you haven't already, [sign up](https://www.inmobi.com/user/index?locale=en_us#signup) for an account to start monetizing your app!
@@ -20,7 +20,7 @@ repositories {
     mavenCentral()
 }
 dependencies {
-    implementation 'com.inmobi.monetization:inmobi-ads-kotlin:10.5.3'
+    implementation 'com.inmobi.monetization:inmobi-ads-kotlin:10.7.7'
 }
 ```
 
@@ -31,15 +31,14 @@ To download the latest SDK as a AAR, please visit [http://inmobi.com/sdk](https:
 **To continue integrating with the InMobi SDK, please see the [Integration Guidelines](https://support.inmobi.com/monetize/android-guidelines/) for Android.**
 
 ## New in this version
-    • Gradle 7.0 support
-    • Bug fixes
+    • Android 14 support
 
 ## Requirements
-- Android 4.0.1 (API level 15) and higher
-- androidx.browser
-- androidx.appcompat
-- androidx.recyclerview
-- Picasso Library (picasso-2.8.jar)
+- Android 4.0.1 (API level 16) and higher
+- androidx.browser (Transitive dependency of InMobi SDK)
+- androidx.appcompat (Not a dependency of SDK. Used only in Sample App)
+- androidx.recyclerview (Not a dependency of SDK. Used only in Native Sample App)
+- Picasso Library (picasso-2.8.jar) (Used in Native Ads)
 - **Recommended** Google Play Services 18.0.1
 
 ## License

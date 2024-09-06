@@ -1,6 +1,63 @@
 InMobi Monetization SDK ChangeLog for Android
 =============================================
 
+## Build 10.7.7 [30/Aug/2024]
+    • Updated TargetVersion support to Android 14
+    • Bug Fixes
+
+## Build 10.7.5 [18/July/2024]
+    • Bug Fixes
+
+## Build 10.7.4 [12/June/2024]
+    • Bug Fixes
+
+## Build 10.7.3 [31/May/2024]
+    • Bug Fixes
+    • Updated OMSDK to 1.4.12
+
+## Build 10.6.7 [04/Mar/2024]
+    • Bug Fixes
+
+## Build 10.6.6 [13/Feb/2024]
+    • Bug Fixes
+    • Updated OMSDK to 1.3.37
+    • Improved ad loading & rendering performance in the full screen and video ad formats
+    • Additional rendering capabilities for Native ads
+
+## Build 10.6.3 [22/Jan/2024]
+    • Bug Fixes
+
+## Build 10.6.2 [10/Nov/2023]
+    • Bug Fixes
+
+## Build 10.6.1 [03/Nov/2023]
+    • Bug Fixes
+
+## Build 10.6.0 [25/Oct/2023]
+    • Bug Fixes
+    • Do not use this version as its to prone high Ad Load Failure.
+
+## Build 10.5.9 [26/Sep/2023]
+    • Bug Fixes
+
+## Build 10.5.8 [08/Sep/2023]
+    • Support for User Ad Reporting
+    • Support for Audio Ads
+    • Support for movable Audio Icons
+    • Support for Google Ad Identification Overlay
+    • Bug fixes
+
+## Build 10.5.7 [27/Jun/2023]
+    • Support for U.S. data privacy laws
+    • Bug fixes
+
+## Build 10.5.6 [23/Jun/2023]
+    • Support for U.S. data privacy laws
+    • Bug fixes
+
+## Build 10.5.5 [18/May/2023]
+    • Bug fixes
+
 ## Build 10.5.4 [16/Feb/2023]
     • Gradle 7.0 support
     • Bug fixes
