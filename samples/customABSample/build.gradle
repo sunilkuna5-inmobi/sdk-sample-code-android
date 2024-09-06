@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
+    namespace 'com.inmobi.customabsample'
     compileSdkVersion androidCompileSdkVersion
 
     defaultConfig {
@@ -12,18 +13,9 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-    signingConfigs {
-        release {
-            storeFile file("$rootDir/../unified-sdk-android-kotlin/demoapp/DemoAppReleaseKeyStore")
-            storePassword 'InMobi'
-            keyAlias 'Developer'
-            keyPassword 'InMobi'
-        }
-    }
     buildTypes {
         release {
             minifyEnabled true
-            signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             applicationIdSuffix ".release"
         }
@@ -36,7 +28,6 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    namespace 'com.inmobi.customabsample'
 
 }
 

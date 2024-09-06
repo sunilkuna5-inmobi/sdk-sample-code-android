@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
+    namespace 'com.inmobi.interstitial.sample'
     compileSdkVersion androidCompileSdkVersion
 
     defaultConfig {
@@ -11,18 +12,9 @@ android {
         versionName appVersionName
         multiDexEnabled true
     }
-    signingConfigs {
-        release {
-            storeFile file("$rootDir/../unified-sdk-android-kotlin/demoapp/DemoAppReleaseKeyStore")
-            storePassword 'InMobi'
-            keyAlias 'Developer'
-            keyPassword 'InMobi'
-        }
-    }
     buildTypes {
         release {
             minifyEnabled true
-            signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             applicationIdSuffix ".release"
         }
@@ -38,7 +30,6 @@ android {
     dexOptions {
         javaMaxHeapSize "4g"
     }
-    namespace 'com.inmobi.interstitial.sample'
     lint {
         abortOnError false
     }

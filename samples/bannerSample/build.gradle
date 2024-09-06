@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
+    namespace 'com.inmobi.banner.sample'
     compileSdkVersion androidCompileSdkVersion
-
     defaultConfig {
         applicationId 'com.inmobi.banner.sample'
         minSdkVersion androidMinSdkVersion
@@ -29,7 +29,6 @@ android {
     dexOptions {
         javaMaxHeapSize "4g"
     }
-    namespace 'com.inmobi.banner.sample'
     lint {
         abortOnError false
     }
