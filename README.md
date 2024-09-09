@@ -34,12 +34,8 @@ To download the latest SDK as a AAR, please visit [http://inmobi.com/sdk](https:
     • Android 14 support
 
 ## Requirements
-- Android 4.0.1 (API level 16) and higher
-- androidx.browser (Transitive dependency of InMobi SDK)
+- Android 4.1 (API level 16) and higher
 - androidx.appcompat (Not a dependency of SDK. Used only in Sample App)
-- androidx.recyclerview (Not a dependency of SDK. Used only in Native Sample App)
-- Picasso Library (picasso-2.8.jar) (Used in Native Ads)
-- **Recommended** Google Play Services 18.0.1
 
 ## License
 To view the license for the InMobi SDK, see [here](https://github.com/InMobi/sdk-sample-code-android/blob/master/sdk/licenses/License.txt). To view the terms of service, visit [https://inmobi.com/terms-of-service](http://inmobi.com/terms-of-service/).
