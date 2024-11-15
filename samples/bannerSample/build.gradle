@@ -10,6 +10,7 @@ android {
         versionCode appVersionCode
         versionName appVersionName
         multiDexEnabled true
+        buildConfigField "String", "ACCOUNT_ID", "\"$ACCOUNT_ID\""
     }
     buildTypes {
         release {

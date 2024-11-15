@@ -43,7 +43,7 @@ public class CustomABActivity extends AppCompatActivity implements View.OnClickL
         }
 
         sdkInitStatus = SDKState.SDK_INITIALIZING;
-        InMobiSdk.init(this, "1234567890qwerty0987654321qwerty12345", consent, new SdkInitializationListener() {
+        InMobiSdk.init(this, BuildConfig.ACCOUNT_ID, consent, new SdkInitializationListener() {
             @Override
             public void onInitializationComplete(@Nullable Error error) {
                 if (error == null) {
