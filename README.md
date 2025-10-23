@@ -1,9 +1,9 @@
 InMobi SDK for Android
 ======================
 
-Modified: 13 November, 2024
+Modified: 23 October, 2025
 
-SDK Version: 10.8.0
+SDK Version: 11.0.0
 
 Thanks for monetizing with InMobi!
 If you haven't already, [sign up](https://www.inmobi.com/user/index?locale=en_us#signup) for an account to start monetizing your app!
@@ -20,7 +20,7 @@ repositories {
     mavenCentral()
 }
 dependencies {
-    implementation 'com.inmobi.monetization:inmobi-ads-kotlin:10.8.0'
+    implementation 'com.inmobi.monetization:inmobi-ads-kotlin:11.0.0'
 }
 ```
 
@@ -31,12 +31,41 @@ To download the latest SDK as a AAR, please visit [http://inmobi.com/sdk](https:
 **To continue integrating with the InMobi SDK, please see the [Integration Guidelines](https://support.inmobi.com/monetize/android-guidelines/) for Android.**
 
 ## New in this version
-    • Bug Fixes
+    • Upgraded support for native ads
+    • Bug Fixes and Enhancements
+    • APIs Removed
+        InMobiNative
+            - public String getAdIconUrl()
+            - public String getAdLandingPageUrl()
+            - public boolean isAppDownload()
+            - public JSONObject getCustomAdContent()
+            - public View getPrimaryViewOfWidth(Context context, View convertView, ViewGroup parent, int viewWidthInPixels)
+            - public void reportAdClickAndOpenLandingPage()
+        NativeAdEventListener
+            - public void onAdReceived(@NonNull InMobiNative ad)
+            - public void onAdFullScreenWillDisplay(@NonNull InMobiNative ad)
+            - public void onAdImpressed(@NonNull InMobiNative ad)
+            - public void onAdStatusChanged(@NonNull InMobiNative nativeAd)
+
+    • APIs Added
+        New Class Added : InMobiNativeImage
+        New Class Added : InMobiNativeViewData
+        New Class Added : MediaView
+        InMobiNative
+            - public InMobiNativeImage getAdIcon()
+            - public String getAdvertiserName()
+            - public View getAdChoiceIcon()
+            - public void registerViewForTracking(InMobiNativeViewData viewData)
+            - public void unTrackViews()
+            - public MediaView getMediaView()
+            - public boolean isVideo()
+            - public String getCreativeId()
+            - public JSONObject getAdContent()
 
 ** Refer to [Release Notes](https://support.inmobi.com/monetize/sdk-documentation/android-guidelines/changelogs-android) for Older Versions.**
 
 ## Requirements
-- Android 4.1 (API level 16) and higher
+- Android 4.4 (API level 19) and higher
 - androidx.appcompat (Not a dependency of SDK. Used only in Sample App)
 
 ## License

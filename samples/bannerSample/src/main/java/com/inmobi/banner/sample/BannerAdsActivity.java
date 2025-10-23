@@ -20,6 +20,8 @@ import com.inmobi.ads.InMobiAdRequestStatus;
 import com.inmobi.ads.InMobiBanner;
 import com.inmobi.ads.listeners.BannerAdEventListener;
 import com.inmobi.banner.PlacementId;
+import com.inmobi.sdk.InMobiSdk;
+import com.inmobi.sdk.SdkInitializationListener;
 import com.inmobi.banner.utility.Constants;
 import com.inmobi.banner.utility.DataFetcher;
 import com.inmobi.banner.utility.NewsSnippet;
@@ -65,7 +67,19 @@ public class BannerAdsActivity extends AppCompatActivity {
 
         setupListView();
         getHeadlines();
-        setupBannerAd();
+
+        // Initialize InMobi SDK
+        InMobiSdk.init(this, BuildConfig.ACCOUNT_ID, null, new SdkInitializationListener() {
+            @Override
+            public void onInitializationComplete(@Nullable Error error) {
+                if (error == null) {
+                    Log.d(TAG, "InMobi SDK Initialization Success");
+                    setupBannerAd();
+                } else {
+                    Log.e(TAG, "InMobi SDK Initialization failed: " + error.getMessage());
+                }
+            }
+        });
     }
 
     private void setupBannerAd() {
